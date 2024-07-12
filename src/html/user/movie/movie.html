@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 | 용당극장</title>
+    <!-- fontawesome 아이콘 사용 -->
+    <script src="https://kit.fontawesome.com/7dba51591e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container movie-container">
+        <div class="nav">
+            <ul>
+                <li><a href="#">박스오피스</a></li>
+                <li><a href="#">상영예정작</a></li>
+                <li><a href="#">용당단독</a></li>
+            </ul>
+        </div>
+        <div>
+            <select>
+                <option>예매율순</option>
+                <option>개봉일순</option>
+                <option>관람희망순</option>
+            </select>
+            <div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="releaseToggle">
+                    <label class="form-check-label" for="releaseToggle">개봉작만</label>
+                </div>
+                <form class="search-box" action="#" method="get">
+                    <input class="search-txt movie-search" id="movieSearch" name="movie_search" placeholder="영화명 검색">
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="movie-list">
+                <div class="movie-info">
+                    <p class="movie-rank">1</p>
+                    <img class="movie-poster" src="/src/img/인사이드아웃2.jpg">
+                    <div class="movie-age-title-box">
+                        <img class="movie-age">
+                        <p>탈주</p>
+                    </div>
+                    <div class="movie-detail-box">
+                        <div class="movie-detail-first">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
