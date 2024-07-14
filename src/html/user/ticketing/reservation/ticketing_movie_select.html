@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/user/ticketing/reservation/ticketing_movie_select.css">
+    <title>예매 | 용당극장</title>
+    <style>
+        *{margin : 0 auto;}
+    </style>
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- 아이콘 적용 -->
+    <script src="https://kit.fontawesome.com/011513753c.js" crossorigin="anonymous"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body style="background-color: #2d2d2dee;">
+    <!-- 헤더 시작 -->
+    <div class="header" style="width: 100%; height: 100px; background-color: #fff;"></div>
+    <!-- 헤더 끝 -->
+    <!-- 메인 시작 -->
+    <div class="main">
+        <!-- 예매 컨테이너 -->
+        <div class="ticket-container container w-100 h-100">
+            <!-- 예매 랩핑 -->
+            <div class="ticket-wrap w-100 h-100 rounded-3" style="background-color: #c08282;">
+                <!-- 예매 상단 -->
+                <div class="w-100 h-75 d-flex justify-content-between">
+                    <!-- 예매 사이드 바() -->
+                    <div class="ticket-sidebar h-100 row" style="background-color: #333;">
+                        <!-- 상영시간 -->
+                        <div class="d-flex ticket-time">
+                            <div class="align-self-center">
+                                <div class="text-center">01</div>
+                                <div class="text-center">상영시간</div>
+                            </div>
+                        </div>
+                        <!-- 인원좌석 -->
+                        <div class="d-flex ticket-seat border-top border-bottom">
+                            <div class="align-self-center">
+                                <div class="text-center">02</div>
+                                <div class="text-center">인원 & 좌석</div>
+                            </div>
+                        </div>
+                        <!-- 결제 -->
+                        <div class="d-flex ticket-payment">
+                            <div class="align-self-center">
+                                <div class="text-center">03</div>
+                                <div class="text-center">결제</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- 예매 메인 -->
+                    <div class="ticket-main w-100 h-100 row">
+                        <!-- 영화관 -->
+                        <div class="col ticket-region-con">
+                            <!-- 영화관 타이틀 -->
+                            <div class="ticket-region">
+                                <p class="ticket-title">영화관</p>
+                            </div>
+                            <!-- 영화관 콘텐츠 -->
+                            <div class="col ticket-region-inner ticket-inner">
+                                <!-- 영화관 탭 메뉴바 -->
+                                <div class="ticket-tab-menu border-bottom">
+                                    <div class="ticket-tab-menu-p border-end">
+                                        <p>전체</p>
+                                    </div>
+                                    <div class="ticket-tab-menu-p">
+                                        <p>극장</p>
+                                    </div>
+                                </div>
+                                <!-- [전체, 극장] 영화관 콘텐츠 -->
+                                 <div class="ticket-theater-list">
+                                    <!-- [전체] 지역 리스트 -->
+                                     <div class="ticket-theater-region-list">
+                                        <ul>
+                                            <!-- 지역 선택 -->
+                                            <li class="ticket-region-selected">
+                                                <div class="ticket-region-selected-list border-end">
+                                                    <a class="ticket-region-a ticket-area" href="#">
+                                                        <span class="ticket-theater-region">부산(10)</span>
+                                                    </a>
+                                                    <a class="ticket-region-a ticket-area" href="#">
+                                                        <span class="ticket-theater-region">울산(5)</span>
+                                                    </a>
+                                                    <a class="ticket-region-a ticket-area" href="#">
+                                                        <span class="ticket-theater-region">경남(5)</span>
+                                                    </a>
+                                                </div>
+                                                <!-- 지역 선택시 영화관 이름 리스트 -->
+                                                 <div class="ticket-theater-region-name-list">
+                                                    <ul class="ticket-theater-region-name">
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">용당</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">경성대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산장림</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">센텀시티</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">용당</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">경성대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산장림</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">센텀시티</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">용당</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">경성대</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">부산장림</a>
+                                                        </li>
+                                                        <li class="ticket-theater-region-index">
+                                                            <a class="ticket-region-a" href="#">센텀시티</a>
+                                                        </li>
+                                                    </ul>
+                                                 </div>
+                                            </li>
+                                        </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- 영화 -->
+                        <div class="col ticket-movie-con border-end border-start">
+                            <div class="ticket-movie">
+                                <p class="ticket-title">영화</p>
+                            </div>
+                            <!-- 영화 콘텐츠 -->
+                             <div class="col ticket-movie-inner ticket-inner">
+                                <!-- 필터 -->
+                                <div class="ticket-list-filter border-bottom">
+                                    <ul>
+                                        <li>
+                                            <a href="#">예매순</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">가나다순</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 영화 리스트 -->
+                                <div class="ticket-movie-list">
+                                    <div class="ticket-movie-selected">
+                                        <ul>
+                                            <li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li><li>
+                                                <!-- hidden으로 영화정보 가져와야 함 -->
+                                                <a class="ticket-movie-a" href="#">
+                                                    <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                                    <p class="ticket-movie-title">인사이드아웃2</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                        <!-- 날짜 / 시간 -->
+                        <div class="col ticket-date-con">
+                            <div class="ticket-date">
+                                <p class="ticket-title">날짜|시간</p>
+                            </div>
+                            <!-- 날짜/시간 콘텐츠 -->
+                             <div class="col ticket-date-inner ticket-inner">
+                                <!-- 날짜 선택 -->
+                                 <div class="ticket-date-slide">
+                                    <ul class="ticket-date-ul">
+                                        <div class="ticket-month">
+                                            <p class="ticket-month ticket-month-p">7월</p>
+                                        </div>
+                                        <div class="ticket-date-inner-wrapper">
+                                            <div class="col ticket-date-inn">
+                                                <div class="ticket-date-slide owl-carousel owl-theme">
+                                                    
+                                                    <div class="item">
+                                                        <div class="date-item active">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">20</p>
+                                                                <p class="ticket-day">토</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">21</p>
+                                                                <p class="ticket-day">일</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">22</p>
+                                                                <p class="ticket-day">월</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">23</p>
+                                                                <p class="ticket-day">화</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">24</p>
+                                                                <p class="ticket-day">수</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">25</p>
+                                                                <p class="ticket-day">목</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">26</p>
+                                                                <p class="ticket-day">금</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">27</p>
+                                                                <p class="ticket-day">토</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">28</p>
+                                                                <p class="ticket-day">일</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">29</p>
+                                                                <p class="ticket-day">월</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">30</p>
+                                                                <p class="ticket-day">화</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="date-item">
+                                                            <a href="#">
+                                                                <p class="ticket-date1">31</p>
+                                                                <p class="ticket-day">수</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                </div>
+
+
+
+                                    </ul>
+                                 </div>
+                                 <!-- 시간 선택 -->
+                                 <div class="ticket-time-list">
+                                    <!-- 각 영화별 시간 -->
+                                    <div class="ticket-time-selected">
+                                        <!-- 영화 제목 -->
+                                         <div class="ticket-time-title">
+                                            <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                            <span class="ticket-movie-title">인사이드아웃2</span>
+                                         </div>
+                                         <!-- 상영관/시간 정보 -->
+                                          <div class="ticket-time-cinema">
+                                            <ul class="ticket-time-box">
+                                                <!-- 시간 박스 -->
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">63관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <!-- 각 영화별 시간 -->
+                                    <div class="ticket-time-selected">
+                                        <!-- 영화 제목 -->
+                                         <div class="ticket-time-title">
+                                            <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                            <span class="ticket-movie-title">인사이드아웃2</span>
+                                         </div>
+                                         <!-- 상영관/시간 정보 -->
+                                          <div class="ticket-time-cinema">
+                                            <ul class="ticket-time-box">
+                                                <!-- 시간 박스 -->
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">63관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <!-- 각 영화별 시간 -->
+                                    <div class="ticket-time-selected">
+                                        <!-- 영화 제목 -->
+                                         <div class="ticket-time-title">
+                                            <img class="age-img" src="../../../../img/12세관람가icon.png">
+                                            <span class="ticket-movie-title">인사이드아웃2</span>
+                                         </div>
+                                         <!-- 상영관/시간 정보 -->
+                                          <div class="ticket-time-cinema">
+                                            <ul class="ticket-time-box">
+                                                <!-- 시간 박스 -->
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">63관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="ticket-movie-time">21:25</div>
+                                                        <div class="ticket-movie-info">
+                                                            <div class="ticket-time-seat">
+                                                                <span>41/107</span>
+                                                            </div>
+                                                            <div class="ticket-cinema">6관</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                          </div>
+                                    </div>
+                                 </div>
+                             </div>
+                             
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- 예매 푸터 -->
+                 <div class="ticket-footer w-100 h-25"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 끝 -->
+    <!-- 푸터 시작 -->
+    <div footer></div>
+    <!-- 푸터 끝 -->
+
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 5,
+                nav: true,
+                dots: false,
+                navText: ["<span aria-label='Previous'>&lt;</span>", "<span aria-label='Next'>&gt;</span>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 7
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
