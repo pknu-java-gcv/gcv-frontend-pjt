@@ -1,0 +1,108 @@
+/* --- 전체 설정 start --- */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: Pretendard;
+}
+
+/* --- 전체 설정 end --- */
+
+
+/* --- 탭리스트 start --- */
+/* 탭리스트 */
+.movie-nav {
+    margin-bottom: 17px !important;
+}
+
+/* 탭리스트 활성화 된 메뉴바 */
+.movie-nav-link.active {
+    background-color: #65824A !important;
+    border-color: #132A13 !important;
+}
+
+/* 탭리스트 링크 */
+.movie-nav-link {
+    border-radius: 0 !important;
+    background-color: #93A086 !important;
+    color: white !important;
+    border-color: #d9d9d9 !important;
+}
+/* --- 탭리스트 end --- */
+
+
+/* --- 영화 정보 start --- */
+/* 포스터 */
+.movie-detail-poster{
+    width: 227px;
+    height: 325px;
+}
+
+/* 예매하기 버튼 */
+.movie-ticketing-btn{
+    width: 227px;
+    background-color: #FFD569 !important;
+    color: #132A13 !important;
+    font-size: 27px !important;
+    border-radius: 24.5px !important;
+    margin-top: 13px;
+    margin-bottom: 32px;
+}
+/* --- 영화 정보 end --- */
+
+
+/* --- 관람평 start --- */
+/* - 관람평 정보 start - */
+/* 관람평 정보 박스 */
+.movie-review-info-box{
+    background-color: #D9D9D9;
+}
+
+/* 관람평 개수 */
+.movie-review-num{
+    color: #65824A;
+}
+
+/* 관람평 정보 내 영화 제목 */
+.movie-review-info > .movie-review-title{
+    color: #65824A;
+}
+
+/* 관람평 작성 아이콘 */
+.pencil-icon {
+    width: 17.67px;
+    height: 17.99px;
+}
+
+/* 관람평 작성 버튼 */
+.movie-review-write-btn{
+    width: 124px;
+    height: 31px;
+    border-radius: 10px;
+    background: #65824A !important;
+    color: white !important;
+}
+/* - 관람평 정보 end - */
+
+.movie-review-orderby-icon{
+    height: 17.27px;
+}
+
+/* 프로필 사진 */
+.movie-review-profile-img{
+    width: 36px;
+    height: 36px;
+}
+/* --- 관람평 end --- */
+
+/* 편의기능 버튼 */
+.convenience-btn-box{
+    bottom: 35px;
+    right: 155px;
+
+    visibility: hidden;
+}
