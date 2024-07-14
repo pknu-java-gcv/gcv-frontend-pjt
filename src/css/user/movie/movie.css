@@ -1,0 +1,144 @@
+/* --- 전체 설정 start --- */
+* {
+    font-family: Inter;
+}
+
+p {
+    margin: 0 !important;
+}
+/* --- 전체 설정 end --- */
+
+
+/* --- 탭리스트 start --- */
+/* 탭리스트 */
+.movie-nav {
+    margin-bottom: 17px !important;
+}
+
+/* 탭리스트 활성화 된 메뉴바 */
+.movie-nav-link.active {
+    background-color: #65824A !important;
+    border-color: #132A13 !important;
+}
+
+/* 탭리스트 링크 */
+.movie-nav-link {
+    border-radius: 0 !important;
+    background-color: #93A086 !important;
+    color: white !important;
+    border-color: #d9d9d9 !important;
+}
+/* --- 탭리스트 end --- */
+
+
+/* --- 필터링 및 정렬 start --- */
+/* - 검색창 start - */
+/* 검색창 전체 크기 */
+.movie-search-box {
+    position: relative;
+    width: 213px;
+    height: 30px;
+}
+
+/* 검색창 글씨 */
+.movie-search-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 11px 6px;
+    font-size: 15px;
+}
+
+/* 검색하기 버튼 */
+.search-btn {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+/* - 검색창 end - */
+
+/* - 개봉작만 스위치 start - */
+.form-check-input {
+    background-color: #cfcfcf !important;
+    width: 22px !important;
+    height: 12px !important;
+    border: none !important;
+    color: white !important;
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+
+.form-check-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #65824A !important;
+    border: none !important;
+}
+
+.form-check-label {
+    margin-left: -10px;
+    font-size: 13px;
+}
+/* - 개봉작만 스위치 end - */
+
+/* 개봉작만 스위치, 검색 묶인 박스 */
+.movie-filter-and-search{
+    margin-bottom: 25px;
+}
+/* --- 필터링 및 정렬 end --- */
+
+
+/* --- 영화 리스트 start --- */
+/* 영화 정보 */
+.movie-info{
+    margin-bottom: 35px;
+}
+
+/* 영화 순위 */
+.movie-rank {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: -2px !important;
+    margin-left: 11px !important;
+}
+
+/* 영화 포스터 */
+.movie-poster {
+    width: 212.75px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* 영화 연령가 */
+.movie-age {
+    width: 25px;
+    height: 23px;
+}
+
+/* 영화 연령가, 제목 들어있는 박스 */
+.movie-age-title-box {
+    margin-top: 20px;
+    margin-bottom: 8.83px;
+}
+
+/* 예매율 숫자부분 */
+.movie-ticketing-rate-num {
+    margin-left: 13px;
+}
+
+/* --- 영화 리스트 end --- */
