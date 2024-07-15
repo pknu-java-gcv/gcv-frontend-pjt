@@ -1,0 +1,269 @@
+.main{
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.ticket-wrap{
+    border: 10px;
+    overflow: hidden;
+}
+
+.ticket-container{
+    margin: 50px 0;
+}
+
+.ticket-sidebar{
+    width: 10%;
+    margin : 0 !important;
+}
+
+.ticket-main{
+    width: 13%;
+    margin : 0 !important;
+    background-color: #fff;
+    
+}
+
+.ticket-time, .ticket-seat, .ticket-payment{
+    background-color: #93A086;
+    color: #fff;;
+}
+
+.ticket-footer{
+    background-color: #132A13;
+}
+
+.ticket-seat-con{
+    padding: 0  !important;
+    margin: 0 !important;
+}
+
+.ticket-seat1{
+    margin: 0 !important;
+    width: 100%;
+    height: 8%;   
+    background-color: #132A13;
+}
+
+.ticket-title{
+    margin: 0 !important;
+    text-align: center;
+    height: 45px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+
+/* 좌석선택 START */
+.ticket-seat-inner{
+    margin: 0;
+    width: 100%;
+    height: 480px;
+}
+
+.ticket-movie-people-con{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-movie-people{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* 영화정보 */
+.ticket-movie-info-con{
+    margin: 0;
+    width: 270px;
+    /* padding: 20px 0 0 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.age-img{
+    width: 20px;
+    height: 22px;
+}
+
+.ticket-movie-info{
+    margin: 0;
+    width: 80%;
+}
+
+.ticket-movie-title{
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.ticket-movie-title > img{
+    margin: 0;
+}
+
+.ticket-movie-title > span{
+    margin-left: 5px;
+    display: block;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ticket-reservation-info > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 85%;
+}
+
+/* 인원선택 */
+.ticket-count-people{
+    width: 750px;
+    height: 40px;
+    margin: 0;
+}
+
+.ticket-count-people > ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.ticket-count-people > ul > li{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    width: 150px;
+}
+
+.ticket-age{
+    margin: 0;
+    margin-right: 5px;
+    font-size: 0.8em;
+    width: 45px;
+    text-align: center;
+}
+
+.ticket-people-num{
+    display: flex;
+    align-items: center;
+    width: 95px;
+    height: 40px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ticket-people-btn{
+    width: 30px;
+    height: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+}
+
+/* 좌석선택 */
+.ticket-movie-seat-wrap{
+    width: 100%;
+    height: 388px;
+    background-color: #132A13;
+}
+
+.ticket-seat-msg{
+    width: 90%;
+    height: 20px;
+}
+
+.ticket-movie-seat-con{
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* align-items: center; */
+    /* vertical-align: middle; */
+}
+
+.ticket-movie-screen-title{
+    width: 90%;
+    height: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    /* margin-top: 20px; */
+}
+
+.ticket-movie-screen-p {
+    display: block;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    padding: 5px 0;
+    letter-spacing: 15px;
+}
+
+.ticket-seat-map{
+    width: 90%;
+    height: 270px;
+    overflow: hidden;
+}
+
+.ticket-seat-map > div {
+    width: 100%;
+    height: 100%;
+}
+
+.ticket-seat-row{
+    width: 390px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ticket-seat-y{
+    width: 10px;
+    height: 20px;
+    margin: 0;
+}
+
+.ticket-seat-label{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.ticket-seat-col{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.ticket-seat-col-x{
+    width: 21px;
+    height: 16px;
+    background-color: #93A086;
+    text-align: center;
+    font-size: 0.7em;
+    border-radius: 7px 7px 2px 0px;
+    overflow: hidden;
+}
