@@ -1,0 +1,46 @@
+
+.main{
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.ticket-wrap{
+    border: 10px;
+    overflow: hidden;
+}
+
+.ticket-container{
+    margin: 50px 0;
+}
+
+.ticket-top{
+    /* height: 90%; */
+    background-color: #c3bdeb;
+}
+
+.ticket-success{
+    margin-top: 40px;
+}
+
+.ticket-btn-ok{
+    width: 60%; 
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.ticket-success-info {
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    max-height: 100%; /* 뷰포트 높이의 40%로 설정 */
+}
+
+/* 스크롤바 스타일 수정 */
+.ticket-success-info::-webkit-scrollbar {
+    width: 8px;
+}
+.ticket-success-info::-webkit-scrollbar-thumb {
+    background: #d2d2d2; 
+    border-radius: 5px;
+}
+.ticket-success-info::-webkit-scrollbar-thumb:hover {
+    background: #9f9f9f; 
+}
