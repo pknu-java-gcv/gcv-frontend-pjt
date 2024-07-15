@@ -32,18 +32,116 @@
     color: white !important;
     border-color: #d9d9d9 !important;
 }
+
 /* --- 탭리스트 end --- */
 
 
 /* --- 영화 정보 start --- */
+/* 영화 정보 박스 */
+.movie-detail-cont {
+    background-color: black;
+    margin-bottom: 49px;
+}
+
+/* 흰색 글자 */
+.movie-white-txt {
+    color: white;
+}
+
+/* 큰 글자 */
+.movie-large-txt {
+    font-size: 30px;
+}
+
+/* 15px 글자 */
+.movie-15-txt {
+    font-size: 15px;
+}
+
+/* 작은 글자 */
+.movie-small-txt {
+    font-size: 13px;
+}
+
+/* 폰트 두께 500 */
+.font-weight-500 {
+    font-weight: 500;
+}
+
+/* - 실관람 평점, 예매율, 누적관객수 start - */
+/* 각각 박스 */
+.movie-info-low-box {
+    margin-right: 39px;
+}
+
+/* 글자 */
+.movie-info-title-txt {
+    margin-bottom: 5px;
+}
+
+/* 아이콘 */
+.movie-info-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* 평점 */
+.movie-review-score {
+    color: #FFD569;
+}
+
+/* - 실관람 평점, 예매율, 누적관객수 end - */
+
+
+/* 영화 타이틀 */
+.movie-title {
+    font-size: 40px;
+    margin-bottom: 3px;
+    margin-top: 31px;
+}
+
+/* 영화 타이틀 영어 */
+.movie-title-en {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* - 버튼 start - */
+/* 버튼 박스 */
+.movie-detail-btn-box {
+    margin-bottom: 186px;
+}
+
+.movie-detail-btn {
+    width: 91px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.3px solid white;
+    border-radius: 3px;
+}
+
+.movie-detail-btn-icon-heart {
+    width: 18.91px;
+    height: 16.59px;
+}
+
+.movie-detail-btn-icon-share {
+    width: 14px;
+    height: 20px;
+}
+
+/* - 버튼 end - */
+
 /* 포스터 */
-.movie-detail-poster{
+.movie-detail-poster {
     width: 227px;
     height: 325px;
+
+    margin-top: 31px;
 }
 
 /* 예매하기 버튼 */
-.movie-ticketing-btn{
+.movie-ticketing-btn {
     width: 227px;
     background-color: #FFD569 !important;
     color: #132A13 !important;
@@ -52,23 +150,74 @@
     margin-top: 13px;
     margin-bottom: 32px;
 }
+
 /* --- 영화 정보 end --- */
 
+
+/* --- 상세정보 start --- */
+/* - 줄거리 start - */
+.movie-summary-txt {
+    font-size: 15px;
+    color: #606060;
+    margin-bottom: 53px;
+}
+
+/* 더보기 버튼 */
+.movie-more-btn {
+    color: #9E9E9E;
+}
+
+.movie-more-btn-icon {
+    width: 8px;
+    height: 4px;
+}
+
+/* - 줄거리 end - */
+
+/* 더보기 아래 밑줄 */
+.movie-detail-hr {
+    margin-top: 15px;
+    margin-bottom: 31px;
+}
+
+/* - 감독 등 정보 start - */
+.movie-detail-info {
+    font-weight: 600;
+    color: #4f4f4f;
+    margin-bottom: 159px;
+}
+
+/* - 감독 등 정보 end - */
+/* --- 상세정보 end --- */
 
 /* --- 관람평 start --- */
 /* - 관람평 정보 start - */
 /* 관람평 정보 박스 */
-.movie-review-info-box{
-    background-color: #D9D9D9;
+.movie-review-info-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 49px;
+
+    height: 114px !important;
+
+    padding: 40px;
+}
+
+/* ~에 대한 n개의 이야기가 있어요! */
+.movie-review-info-1 {
+    color: #132A13;
+    font-size: 23px;
+
+    margin-bottom: 32px;
 }
 
 /* 관람평 개수 */
-.movie-review-num{
+.movie-review-num {
     color: #65824A;
 }
 
 /* 관람평 정보 내 영화 제목 */
-.movie-review-info > .movie-review-title{
+.movie-review-info>.movie-review-title {
     color: #65824A;
 }
 
@@ -79,30 +228,166 @@
 }
 
 /* 관람평 작성 버튼 */
-.movie-review-write-btn{
+.movie-review-write-btn {
     width: 124px;
     height: 31px;
     border-radius: 10px;
     background: #65824A !important;
     color: white !important;
 }
+
 /* - 관람평 정보 end - */
 
-.movie-review-orderby-icon{
+
+/* - 관람평 정렬 버튼 start - */
+/* 아이콘 */
+.movie-review-orderby-icon {
     height: 17.27px;
 }
 
+/* 버튼 박스 */
+.movie-review-btn-box {
+    margin-bottom: 39px;
+}
+
+/* 버튼 */
+.movie-review-btn {
+    background-color: #ffffff00;
+    border: none;
+}
+
+/* - 관람평 정렬 end - */
+
 /* 프로필 사진 */
-.movie-review-profile-img{
+.movie-review-profile-img {
     width: 36px;
     height: 36px;
 }
+
+/* 관람평 박스 */
+.movie-review-content {
+    border-radius: 24px;
+    border: 1px solid #132A13;
+
+    padding: 30px 13px;
+    padding-bottom: 15px;
+
+    margin-bottom: 65px;
+}
+
+/* 관람평 박스 내부 줄 */
+.movie-review-content-hr {
+    height: 0.7px;
+    margin: 16px 13px;
+    margin-bottom: 14px;
+
+}
+
+.movie-review-first-box,
+.movie-review-txt,
+.movie-review-last-box {
+    margin: 0 13px;
+}
+
+.movie-review-txt {
+    margin-top: 30px;
+}
+
 /* --- 관람평 end --- */
 
 /* 편의기능 버튼 */
-.convenience-btn-box{
-    bottom: 35px;
-    right: 155px;
-
-    visibility: hidden;
+.convenience-btn-box {
+    margin-bottom: 100px;
+    margin-right: 70px;
 }
+
+.convenience-ticketing-btn {
+    width: 142px;
+    height: 45px;
+    border-radius: 41px !important;
+    background: #132A13 !important;
+
+    color: #FFF !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.convenience-top-btn {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #132A13 !important;
+    border-radius: 100px !important;
+
+    margin-left: 14px;
+}
+
+.convenience-top-btn-icon {
+    font-size: 21px !important;
+}
+
+/* --- 관람평 작성 모달창 start --- */
+.modal-content {
+    width: 450px;
+    height: 750px;
+
+    padding: 10px 5px !important;
+}
+
+.movie-review-modal-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.movie-review-score-btn {
+    border: none;
+    background-color: white;
+}
+
+.movie-review-score-star {
+    font-size: 50px;
+}
+
+.modal-movie-review-content {
+    resize: none;
+    height: 400px;
+
+    border-radius: 15px;
+    border: 2px solid #65824A;
+
+    margin-bottom: 15px;
+}
+
+.modal-header {
+    border: none !important;
+}
+
+.modal-footer {
+    border: none !important;
+}
+
+.movie-review-score-box {
+    margin-bottom: 20px;
+}
+
+.modal-review-form-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie-review-modal-btn {
+    font-size: 18px !important;
+    padding: 10px 15px !important;
+}
+
+.movie-review-close-btn {
+    border: 1px solid #D4D4D4 !important;
+    color: #D4D4D4 !important;
+}
+
+.movie-review-submit-btn {
+    background-color: #65824A !important;
+    color: white !important;
+}
+/* --- 관람평 작성 모달창 end --- */
