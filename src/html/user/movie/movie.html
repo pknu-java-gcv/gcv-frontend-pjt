@@ -38,7 +38,7 @@
                         <!-- 선택되어 있는 정렬 기준에 따라 텍스트 바뀌어야 함 -->
                         예매율순
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu movie-dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li><a class="dropdown-item movie-dropdown-item" href="#">예매율순</a></li>
                         <li><a class="dropdown-item movie-dropdown-item" href="#">개봉일순</a></li>
                         <li><a class="dropdown-item movie-dropdown-item" href="#">관람희망순</a></li>
@@ -47,11 +47,11 @@
             </div>
             <div class="movie-filter-and-search d-flex justify-content-between">
                 <div class="d-flex align-items-center">
-                    <div class="form-check form-switch">
+                    <div class="form-check form-switch movie-form-check">
                         <input class="form-check-input" type="checkbox" role="switch" id="releaseToggle">
                         <label class="form-check-label" for="releaseToggle">개봉작만</label>
                     </div>
-                    <p class="ms-4"><span>114</span>개의 영화가 검색되었습니다.</p>
+                    <p class="ms-3"><span>114</span>개의 영화가 검색되었습니다.</p>
                 </div>
                 <form class="movie-search-box" action="#" method="get">
                     <input class="movie-search-txt" id="movieSearch" name="movie_search" placeholder="영화명 검색">
@@ -61,7 +61,7 @@
                 </form>
             </div>
             <div class="movie-list row">
-                <div class="movie-info position-relative col">
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
                     <div class="movie-poster-box">
                         <p class="movie-rank position-absolute">1</p>
                         <div
@@ -87,7 +87,7 @@
                         <div><span>2024.06.12</span> 개봉</div>
                     </div>
                 </div>
-                <div class="movie-info position-relative col">
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
                     <div class="movie-poster-box">
                         <p class="movie-rank position-absolute">2</p>
                         <div
@@ -113,7 +113,7 @@
                         <div><span>2024.07.03</span> 개봉</div>
                     </div>
                 </div>
-                <div class="movie-info position-relative col">
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
                     <div class="movie-poster-box">
                     <p class="movie-rank position-absolute">3</p>
                     <div
@@ -139,7 +139,7 @@
                         <div><span>2024.07.12</span> 개봉</div>
                     </div>
                 </div>
-                <div class="movie-info position-relative col">
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
                     <div class="movie-poster-box">
                     <p class="movie-rank position-absolute">4</p>
                     <div
@@ -165,7 +165,85 @@
                         <div><span>2024.07.31</span> 개봉</div>
                     </div>
                 </div>
-                <div class="movie-info position-relative col">
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
+                    <div class="movie-poster-box">
+                    <p class="movie-rank position-absolute">1</p>
+                    <div
+                        class="movie-hover-btn-box position-absolute d-flex flex-column justify-content-center align-items-center">
+                        <button class="movie-hover-btn movie-hover-btn-ticketing">예매하기</button>
+                        <button class="movie-hover-btn movie-hover-btn-detail">상세보기</button>
+                    </div>
+                    <img class="movie-poster" src="/src/img/인사이드아웃2.jpg">
+                    </div>
+                    <div class="movie-age-title-box d-flex">
+                        <img class="movie-age" src="/src/img/전체관람가icon.png">
+                        <p class="movie-title">인사이드 아웃 2</p>
+                    </div>
+                    <div class="movie-detail-box">
+                        <div class="movie-detail-first d-flex">
+                            <div>예매율<span class="movie-ticketing-rate-num">19.3</span>%</div>
+                            <span class="movie-vertical-bar mx-2">|</span>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #65824a;"></i>
+                                <span>9.4</span>
+                            </div>
+                        </div>
+                        <div><span>2024.06.12</span> 개봉</div>
+                    </div>
+                </div>
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
+                    <div class="movie-poster-box">
+                    <p class="movie-rank position-absolute">1</p>
+                    <div
+                        class="movie-hover-btn-box position-absolute d-flex flex-column justify-content-center align-items-center">
+                        <button class="movie-hover-btn movie-hover-btn-ticketing">예매하기</button>
+                        <button class="movie-hover-btn movie-hover-btn-detail">상세보기</button>
+                    </div>
+                    <img class="movie-poster" src="/src/img/인사이드아웃2.jpg">
+                    </div>
+                    <div class="movie-age-title-box d-flex">
+                        <img class="movie-age" src="/src/img/전체관람가icon.png">
+                        <p class="movie-title">인사이드 아웃 2</p>
+                    </div>
+                    <div class="movie-detail-box">
+                        <div class="movie-detail-first d-flex">
+                            <div>예매율<span class="movie-ticketing-rate-num">19.3</span>%</div>
+                            <span class="movie-vertical-bar mx-2">|</span>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #65824a;"></i>
+                                <span>9.4</span>
+                            </div>
+                        </div>
+                        <div><span>2024.06.12</span> 개봉</div>
+                    </div>
+                </div>
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
+                    <div class="movie-poster-box">
+                    <p class="movie-rank position-absolute">1</p>
+                    <div
+                        class="movie-hover-btn-box position-absolute d-flex flex-column justify-content-center align-items-center">
+                        <button class="movie-hover-btn movie-hover-btn-ticketing">예매하기</button>
+                        <button class="movie-hover-btn movie-hover-btn-detail">상세보기</button>
+                    </div>
+                    <img class="movie-poster" src="/src/img/인사이드아웃2.jpg">
+                    </div>
+                    <div class="movie-age-title-box d-flex">
+                        <img class="movie-age" src="/src/img/전체관람가icon.png">
+                        <p class="movie-title">인사이드 아웃 2</p>
+                    </div>
+                    <div class="movie-detail-box">
+                        <div class="movie-detail-first d-flex">
+                            <div>예매율<span class="movie-ticketing-rate-num">19.3</span>%</div>
+                            <span class="movie-vertical-bar mx-2">|</span>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #65824a;"></i>
+                                <span>9.4</span>
+                            </div>
+                        </div>
+                        <div><span>2024.06.12</span> 개봉</div>
+                    </div>
+                </div>
+                <div class="movie-info position-relative col col-md-4 col-lg-3">
                     <div class="movie-poster-box">
                     <p class="movie-rank position-absolute">1</p>
                     <div

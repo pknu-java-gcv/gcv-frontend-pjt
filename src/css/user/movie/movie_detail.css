@@ -9,7 +9,6 @@
 * {
     font-family: Pretendard;
 }
-
 /* --- 전체 설정 end --- */
 
 
@@ -40,6 +39,7 @@
 /* 영화 정보 박스 */
 .movie-detail-cont {
     background-color: black;
+
     margin-bottom: 49px;
 }
 
@@ -69,6 +69,10 @@
 }
 
 /* - 실관람 평점, 예매율, 누적관객수 start - */
+.movie-info-box{
+    /* margin-bottom: 5px; */
+}
+
 /* 각각 박스 */
 .movie-info-low-box {
     margin-right: 39px;
@@ -76,22 +80,23 @@
 
 /* 글자 */
 .movie-info-title-txt {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 /* 아이콘 */
 .movie-info-icon {
     width: 18px;
-    height: 18px;
+    height: 16px;
+
+    margin-top: 15px;
+    margin-right: 8px;
 }
 
 /* 평점 */
 .movie-review-score {
     color: #FFD569;
 }
-
 /* - 실관람 평점, 예매율, 누적관객수 end - */
-
 
 /* 영화 타이틀 */
 .movie-title {
@@ -113,23 +118,20 @@
 }
 
 .movie-detail-btn {
-    width: 91px;
+    width: 93px;
     height: 30px;
     background-color: rgba(0, 0, 0, 0);
     border: 0.3px solid white;
     border-radius: 3px;
+
+    font-size: 16px;
+
+    padding: 1px 6px;
 }
 
-.movie-detail-btn-icon-heart {
-    width: 18.91px;
-    height: 16.59px;
+.movie-wish-btn{
+    margin-right: 13px;
 }
-
-.movie-detail-btn-icon-share {
-    width: 14px;
-    height: 20px;
-}
-
 /* - 버튼 end - */
 
 /* 포스터 */
@@ -150,7 +152,6 @@
     margin-top: 13px;
     margin-bottom: 32px;
 }
-
 /* --- 영화 정보 end --- */
 
 
@@ -211,6 +212,10 @@
     margin-bottom: 32px;
 }
 
+.movie-review-info{
+    margin-bottom: 0;
+}
+
 /* 관람평 개수 */
 .movie-review-num {
     color: #65824A;
@@ -221,19 +226,23 @@
     color: #65824A;
 }
 
-/* 관람평 작성 아이콘 */
-.pencil-icon {
-    width: 17.67px;
-    height: 17.99px;
-}
-
 /* 관람평 작성 버튼 */
 .movie-review-write-btn {
-    width: 124px;
+    width: 128px;
+    min-width: 128px;
     height: 31px;
     border-radius: 10px;
     background: #65824A !important;
     color: white !important;
+    margin-left: 6px;
+}
+
+/* 관람평 작성 아이콘 */
+.pencil-icon {
+    width: 17.67px;
+    height: 17.99px;
+
+    margin-right: 5px;
 }
 
 /* - 관람평 정보 end - */
@@ -262,6 +271,8 @@
 .movie-review-profile-img {
     width: 36px;
     height: 36px;
+
+    margin-right: 7px;
 }
 
 /* 관람평 박스 */
@@ -287,6 +298,10 @@
 .movie-review-txt,
 .movie-review-last-box {
     margin: 0 13px;
+}
+
+.movie-review-first-box{
+    line-height: 39.98px;
 }
 
 .movie-review-txt {
