@@ -1,28 +1,29 @@
+/* 레이아웃 공통 CSS START */
 .main{
     width: 100%;
     height: calc(100vh - 200px);
-}
-
-.ticket-wrap{
+  }
+  
+  .ticket-wrap{
     border: 10px;
     overflow: hidden;
-}
-
-.ticket-container{
+    background-color: #fff;
+  }
+  
+  .ticket-container{
     margin: 50px 0;
-}
-
-.ticket-sidebar{
+  }
+  
+  .ticket-sidebar{
     width: 10%;
     margin : 0 !important;
-}
-
-.ticket-main{
-    width: 13%;
+  }
+  
+  .ticket-main{
+    width: 90%;
     margin : 0 !important;
-    background-color: #fff;
-    
-}
+  }
+  
 
 .ticket-time, .ticket-seat, .ticket-payment{
     background-color: #93A086;
@@ -266,4 +267,8 @@ a {
     font-size: 0.7em;
     border-radius: 7px 7px 2px 0px;
     overflow: hidden;
+}
+
+.ticket-seat-ns{
+    margin-right: 20px;
 }
