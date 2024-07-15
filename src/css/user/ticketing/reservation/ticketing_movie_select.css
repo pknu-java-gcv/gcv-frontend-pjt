@@ -7,6 +7,7 @@
 .ticket-wrap{
   border: 10px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .ticket-container{
@@ -19,10 +20,8 @@
 }
 
 .ticket-main{
-  width: 13%;
+  width: 90%;
   margin : 0 !important;
-  background-color: #fff;
-  
 }
 
 .ticket-time, .ticket-seat, .ticket-payment{
@@ -37,20 +36,21 @@
 .ticket-region-con, .ticket-movie-con, .ticket-date-con{
   padding: 0  !important;
   margin: 0 !important;
-  width: 518px !important;
-  max-width: 518px !important;
+  overflow: hidden;
+  /* width: 518px !important;
+  max-width: 518px !important; */
 }
 
 .ticket-region-con, .ticket-movie-con{
-  width: 330px !important;
-  max-width: 330px !important;
+  /* width: 330px !important;
+  max-width: 330px !important; */
 }
 
 .ticket-region, .ticket-movie, .ticket-date{
   margin: 0 !important;
   width: 100%;
-  height: 8%;
   background-color: #132A13;
+  color: #fff;
 }
 /* 레이아웃 공통 CSS END */
 
