@@ -1,0 +1,75 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    height: 100%;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* 콘텐츠 영역 스타일 */
+.content {
+    margin-left: 200px; /* 사이드바 너비만큼 왼쪽 여백 */
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 멤버 폼 설정 */
+.member-form {
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 40%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 버튼 설정 */
+button {
+    width: 100px;
+    margin: 20px auto 0 auto;
+}
+
+.btn-outline-secondary {
+    color: black;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #718c5a;
+    border-color: #718c5a;
+    color: white;
+}
